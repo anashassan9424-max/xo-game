@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <meta name="theme-color" content="#111936">
+
+  <title>XO - لعبة إكس أو</title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="game">
+
+    <h1>⭕ XO ❌</h1>
+
+    <div class="level-title">
+      اختر مستوى الصعوبة
+    </div>
+
+    <div class="levels">
+
+      <button class="level active" data-level="1">
+        🟢 سهل
+      </button>
+
+      <button class="level" data-level="2">
+        🔵 متوسط
+      </button>
+
+      <button class="level" data-level="3">
+        🟠 صعب
+      </button>
+
+      <button class="level" data-level="4">
+        🔴 أسطوري
+      </button>
+
+    </div>
+
+    <div class="score">
+
+      <div>
+        ❌ أنت
+        <br>
+        <span id="playerScore">0</span>
+      </div>
+
+      <div>
+        🤝 تعادل
+        <br>
+        <span id="drawScore">0</span>
+      </div>
+
+      <div>
+        ⭕ الكمبيوتر
+        <br>
+        <span id="computerScore">0</span>
+      </div>
+
+    </div>
+
+    <div id="status">
+      ❌ دورك
+    </div>
+
+    <div class="board">
+
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+
+    </div>
+
+    <button id="restart">
+      🔄 لعبة جديدة
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
